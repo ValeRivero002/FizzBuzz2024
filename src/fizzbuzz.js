@@ -4,7 +4,7 @@ function generar_fizzbuzz(a) {
     return "Fizz";
   }
   else{
-    if(a==5)
+    if(a%5==0)
     {
       return "Buzz";
     }
