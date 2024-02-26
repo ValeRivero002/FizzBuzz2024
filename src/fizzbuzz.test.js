@@ -20,4 +20,7 @@ describe("FizzBuzz", () => {
   it("deberia imprimir FizzBuzz al obtener el numero 15", () => {
     expect(generar_fizzbuzz(15)).toEqual("FizzBuzz");
   });
+  it("deberia imprimir FizzBuzz al obtener un numero multiplo de 15", () => {
+    expect(generar_fizzbuzz(30)).toEqual("FizzBuzz");
+  });
 });
