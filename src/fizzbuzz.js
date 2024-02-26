@@ -1,5 +1,5 @@
 function generar_fizzbuzz(a) {
-  if (a==3)
+  if (a%3==0)
   {
     return "Fizz";
   }

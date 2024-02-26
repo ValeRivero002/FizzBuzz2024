@@ -8,4 +8,7 @@ describe("FizzBuzz", () => {
   it("deberia imprimir Fizz al obtener el numero 3", () => {
     expect(generar_fizzbuzz(3)).toEqual("Fizz");
   });
+  it("deberia imprimir Fizz al obtener un numero multiplo de 3", () => {
+    expect(generar_fizzbuzz(6)).toEqual("Fizz");
+  });
 });
