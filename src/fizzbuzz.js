@@ -1,27 +1,31 @@
-function generar_fizzbuzz(a) {
-  if(a%3==0 && a%5==0)
+function generar_fizzbuzz(a){ 
+  let resultado=[];
+  for(i=0;i<a;i++)
   {
-      return "FizzBuzz";
+    if(i%3==0 && i%5==0)
+  {
+      resultado.push("FizzBuzz");
   }
   else{
-    if (a%3==0)
+    if (i%3==0)
     {
-      return "Fizz";
+      resultado.push("Fizz");
     }
     else{
-      if(a%5==0)
+      if(i%5==0)
       {
-        return "Buzz";
+        resultado.push("Buzz");
       }
       else
       {
-        return a + "";
+        resultado.push(i + "");
       }
       
     }
+
   }
- 
- 
+  }
+  return resultado.join(", ");
 }
 
 export default generar_fizzbuzz;
