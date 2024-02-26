@@ -1,5 +1,11 @@
 function generar_fizzbuzz(a) {
-  return a + "";
+  if (a==3)
+  {
+    return "Fizz";
+  }
+  else{
+    return a + "";
+  }
 }
 
 export default generar_fizzbuzz;
