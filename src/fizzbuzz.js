@@ -1,19 +1,27 @@
 function generar_fizzbuzz(a) {
-  if (a%3==0)
+  if(a%3==0 && a%5==0)
   {
-    return "Fizz";
+      return "FizzBuzz";
   }
   else{
-    if(a%5==0)
+    if (a%3==0)
     {
-      return "Buzz";
+      return "Fizz";
     }
-    else
-    {
-      return a + "";
+    else{
+      if(a%5==0)
+      {
+        return "Buzz";
+      }
+      else
+      {
+        return a + "";
+      }
+      
     }
-    
   }
+ 
+ 
 }
 
 export default generar_fizzbuzz;

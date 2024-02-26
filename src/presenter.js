@@ -8,6 +8,6 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const firstNumber = Number.parseInt(first.value);
-
+  
   div.innerHTML = "<p>" + generar_fizzbuzz(firstNumber) + "</p>";
 });
